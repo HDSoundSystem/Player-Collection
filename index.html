@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Mode</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    
+    <style>
+        /* REGLAGE DE LA TAILLE DE LA POLICE ICI */
+        :root {
+            --font-size-base: 32px;
+            --logo-width: 200px;
+        }
 
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000000; /* Fond noir */
+            color: #ffffff;           /* Texte blanc */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .logo-top {
+            width: var(--logo-width);
+            height: auto;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .links-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: var(--font-size-base);
+            font-weight: 300;
+        }
+
+        /* La classe demandée dans vos instructions de base est conservée ici par stabilité */
+        .brand-logo { 
+            height: 18px; 
+            width: auto; 
+            opacity: 0.85; 
+            filter: grayscale(1); 
+            transform: translateY(-3px); 
+        }
+
+        a:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="img/Technics-Logo-org.png" alt="Technics Logo" class="logo-top">
+        
+        <div class="links-wrapper">
+            <a href="https://yohannzaoui.github.io/Technics-Hi-Res-Audio-Player-Mini/">Mini</a>
+            <a href="https://yohannzaoui.github.io/Technics-Hi-Res-Audio-Player-HiFi/">HiFi</a>
+            <a href="https://yohannzaoui.github.io/Technics-Hi-Res-Audio-Player-Touchscreen/">Touchscreen</a>
+        </div>
+    </div>
+
+    <script>
+        // Sauvegarde automatique des préférences (Sombre et Anglais)
+        document.addEventListener('DOMContentLoaded', () => {
+            localStorage.setItem('theme', 'dark');
+            localStorage.setItem('lang', 'en');
+            document.documentElement.setAttribute('data-theme', 'dark');
+            document.documentElement.setAttribute('lang', 'en');
+        });
+    </script>
+</body>
+</html>
