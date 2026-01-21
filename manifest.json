@@ -1,5 +1,5 @@
 {
-  "name": "Technics Hi-Res Player",
+  "name": "Technics Player Selector",
   "short_name": "Technics Player Selector",
   "description": "Select your Technics Hi-Res Audio Player",
   "start_url": "select.html",
