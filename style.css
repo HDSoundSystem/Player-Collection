@@ -1,0 +1,83 @@
+:root {
+            --font-size-base: 32px;
+            --logo-width: 200px;
+            --gold: #d4af37;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Zalando Sans Expanded', sans-serif;
+            overflow: hidden;
+            user-select: none;
+        }
+
+        .custom-link {
+            color: #ffffff !important;
+            text-decoration: none;
+            font-size: var(--font-size-base);
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            transition: opacity 0.2s ease;
+        }
+
+        /* 1. Mini (Bruno Ace) */
+        .font-mini {
+            font-family: 'Bruno Ace', sans-serif;
+            text-transform: uppercase;
+        }
+
+        /* 2. HiFi (Lexend Mega) */
+        .font-hifi {
+            font-family: 'Lexend Mega', sans-serif;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        /* 3. Master Audio Player (Pinyon Script) */
+        .font-master {
+            font-family: 'Pinyon Script', cursive;
+            font-size: 42px;
+            letter-spacing: 0px;
+            text-transform: none;
+        }
+
+        /* 4. Touchscreen (Doto) */
+        .font-touchscreen {
+            font-family: 'Doto', sans-serif;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .custom-link:hover {
+            opacity: 0.7;
+            color: #ffffff !important;
+        }
+
+        .logo-top {
+            width: var(--logo-width);
+            height: auto;
+            margin-bottom: 35px;
+        }
+
+        /* Classes de stabilité sauvegardées */
+        .brand-logo { 
+            height: 18px; 
+            width: auto; 
+            opacity: 0.85; 
+            filter: grayscale(1); 
+            transform: translateY(-3px); 
+        }
+
+        .repeat-mode-label {
+            position: absolute; 
+            top: 3px; 
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 10px; 
+            font-weight: 900;
+            color: var(--gold); 
+            display: none;
+            letter-spacing: 0px;
+        }

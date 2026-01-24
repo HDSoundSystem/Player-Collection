@@ -1,8 +1,9 @@
-const CACHE_NAME = 'technics-cache-v1';
+const CACHE_NAME = 'Technics Player Selector';
 const ASSETS = [
   'select.html',
   'img/Technics-Logo-org.png',
   'img/favicon.png',
+  'style.css',
   'manifest.json'
 ];
 
