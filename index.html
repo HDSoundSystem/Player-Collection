@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technics Player Selector</title>
     <meta name="keywords" content="Technics, Hi-Res Audio, Audio Player, Mini, HiFi, Touchscreen, Music Player, Web App, flac, mp3, music">
-    <meta name="description" content="Select your Technics Hi-Res Audio Player interface: Mini, HiFi, Master Edition or Touchscreen.">
+    <meta name="description" content="Select your Technics Hi-Res Audio Player">
     <meta name="author" content="Yohann Zaoui">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,18 +32,5 @@
             <a href="https://yohannzaoui.github.io/Technics-Hi-Res-Audio-Player-Touchscreen/" class="custom-link font-touchscreen">Touchscreen</a>
         </div>
     </div>
-
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('sw.js')
-                .then(reg => console.log('SW Registered'))
-                .catch(err => console.error('SW Registration failed', err));
-            });
-        }
-
-        document.documentElement.setAttribute('data-theme', 'dark');
-        document.documentElement.setAttribute('lang', 'en');
-    </script>
 </body>
 </html>
