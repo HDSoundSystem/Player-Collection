@@ -2,6 +2,7 @@
     --font-size-base: 32px;
     --logo-width: 400px;
     --gold: #d4af37;
+    --font-size-line: 25px;
 }
 
 body {
@@ -32,6 +33,7 @@ body {
 .font-mini {
     font-family: 'Bruno Ace', sans-serif;
     text-transform: uppercase;
+    font-size: var(--font-size-line);
 }
 
 /* 2. HiFi (Lexend Mega) */
@@ -39,12 +41,13 @@ body {
     font-family: 'Lexend Mega', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
+    font-size: var(--font-size-line);
 }
 
 /* 3. Master Audio Player (Pinyon Script) */
 .font-master {
     font-family: 'Pinyon Script', cursive;
-    font-size: 60px;
+    font-size: 50px;
     letter-spacing: 0px;
     text-transform: none;
 }
@@ -55,6 +58,7 @@ body {
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-size: 40px;
 }
 
 .custom-link:hover {
