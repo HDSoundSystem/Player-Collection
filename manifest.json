@@ -1,8 +1,8 @@
 {
-  "name": "Technics Player Collection",
-  "short_name": "Technics Players",
-  "description": "Select your Technics Hi-Res Audio Player",
-  "start_url": "select.html",
+  "name": "Audio Players Collection",
+  "short_name": "Audio Players Collection",
+  "description": "Select your Audio Player",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
