@@ -11,6 +11,8 @@
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        
         <link rel="icon" type="image/png" href="img/favicon.png">
         <link rel="apple-touch-icon" href="img/favicon.png">
         <link rel="manifest" href="manifest.json">
@@ -29,7 +31,6 @@
 
 body {
     background-color: #000000;
-    /* On augmente l'opacité à 0.4 et on réduit la diffusion pour plus d'éclat */
     background-image: radial-gradient(circle at center, rgba(172, 171, 171, 0.8) 0%, rgba(219, 219, 219, 0) 60%);
     background-attachment: fixed;
     color: #ffffff;
@@ -39,6 +40,16 @@ body {
     user-select: none;
     margin: 0;
     min-height: 100vh;
+}
+
+/* Style du bloc TEST centré */
+.text-block {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 200px; /* Espace par rapport aux logos */
+    font-size: 20px;
+    letter-spacing: 3px;
+    width: 100%;
 }
 
 .custom-link {
@@ -65,107 +76,31 @@ body {
     box-shadow: #616161 0px 0px 15px 5px;
 }
 
-.links-container {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-/* Classes de stabilité sauvegardées */
-.brand-logo { 
-    height: 18px; 
-    width: auto; 
-    opacity: 0.85; 
-    filter: grayscale(1); 
-    transform: translateY(-3px); 
-}
-
-.repeat-mode-label {
-    position: absolute; 
-    top: 3px; 
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 10px; 
-    font-weight: 900;
-    color: var(--gold); 
-    display: none;
-    letter-spacing: 0px;
-}
-
 /* Responsive adjustments */
-
-/* Tablettes */
 @media (max-width: 991px) {
     :root {
         --font-size-base: 28px;
         --logo-width: 350px;
     }
-    
 }
 
-/* Petites tablettes et grands smartphones */
 @media (max-width: 767px) {
     :root {
         --font-size-base: 24px;
         --logo-width: 300px;
     }
-    
     .logo-top {
         margin-bottom: 25px;
         border-width: 4px;
     }
-    
-    body {
-        overflow-y: auto;
-    }
 }
 
-/* Smartphones */
 @media (max-width: 576px) {
     :root {
         --font-size-base: 20px;
         --logo-width: 250px;
     }
     
-    
-    .logo-top {
-        margin-bottom: 20px;
-        border-width: 3px;
-    }
-    
-    .custom-link {
-        padding: 8px 0;
-    }
-}
-
-/* Très petits écrans */
-@media (max-width: 400px) {
-    :root {
-        --font-size-base: 18px;
-        --logo-width: 200px;
-    }
-     
-    
-    .logo-top {
-        margin-bottom: 15px;
-    }
-}
-
-/* Mode paysage sur mobile */
-@media (max-height: 600px) and (orientation: landscape) {
-    body {
-        overflow-y: auto;
-    }
-    
-    .logo-top {
-        margin-bottom: 15px;
-        width: 200px;
-    }
-    
-    :root {
-        --font-size-base: 18px;
-    }
-    
-}
   
     </style>
     </head>
@@ -174,25 +109,23 @@ body {
 
         <div class="container-fluid px-3 px-md-4">
             <div class="row g-4">
-
-                <div
-                    class="col-12 col-md-6 d-flex flex-column align-items-center mb-4 mb-md-0">
+                <div class="col-12 col-md-6 d-flex flex-column align-items-center">
                     <a href="brand/technics.html">
-                        <img src="img/Technics-Logo-org.png" alt="Technics Logo"
-                            class="logo-top">
+                        <img src="img/Technics-Logo-org.png" alt="Technics Logo" class="logo-top">
                     </a>
-
                 </div>
 
-                <div
-                    class="col-12 col-md-6 d-flex flex-column align-items-center">
+                <div class="col-12 col-md-6 d-flex flex-column align-items-center">
                     <a href="brand/mcintosh.html">
-                        <img src="img/McIntosh_Logo_b.png" alt="McIntosh Logo"
-                            class="logo-top">
+                        <img src="img/McIntosh_Logo_b.png" alt="McIntosh Logo" class="logo-top">
                     </a>
-
                 </div>
+            </div>
 
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="text-block">These applications are not compatible with mobile phones or tablets.</div>
+                </div>
             </div>
         </div>
 
