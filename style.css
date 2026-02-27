@@ -1,46 +1,281 @@
+/* ===========================
+   Variables CSS Globales
+   =========================== */
+:root {
+    --font-size-base: 32px;
+    --logo-width: 400px;
+    --gold: #d4af37;
+    --font-size-line: 25px;
+    --technics-amber: rgba(255, 191, 0, 0.6);
+    --mcintosh-blue: rgba(21, 199, 223, 0.6);
+}
+
+/* ===========================
+   Reset et Configuration de Base
+   =========================== */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+    background-image: radial-gradient(circle at center, rgba(172, 171, 171, 0.8) 0%, rgba(219, 219, 219, 0) 60%);
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: 'Zalando Sans Expanded', sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+    user-select: none;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background spécifique Technics */
+body.technics-bg {
+    background-image: radial-gradient(circle at center, rgba(255, 191, 0, 0.3) 0%, rgba(0, 0, 0, 0) 60%);
+}
+
+/* Background spécifique McIntosh */
+body.mcintosh-bg {
+    background-image: radial-gradient(circle at center, rgba(21, 199, 223, 0.5) 0%, rgba(0, 0, 0, 0) 60%);
+}
+
+/* ===========================
+   Layout Container System
+   =========================== */
+.container-fluid {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.row.g-4 > * {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.col-12 {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.col-md-6 {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* ===========================
+   Utilitaires Flex
+   =========================== */
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.gap-3 {
+    gap: 1rem;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+/* ===========================
+   Logos
+   =========================== */
+.logo-top {
+    width: var(--logo-width);
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 35px;
+    border: #ffffff 5px solid;
+    box-shadow: #616161 0px 0px 15px 5px;
+    display: block;
+}
+
+.brand-logo { 
+    height: 18px; 
+    width: auto; 
+    opacity: 0.85; 
+    filter: grayscale(1); 
+    transform: translateY(-3px); 
+}
+
+/* ===========================
+   Liens et Navigation
+   =========================== */
+.custom-link {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    transition: opacity 0.2s ease;
+    text-align: center;
+    display: block;
+}
+
+.custom-link:hover {
+    opacity: 0.7;
+    color: #ffffff !important;
+}
+
+.links-container {
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* ===========================
+   Séparateurs
+   =========================== */
+.divider {
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--technics-amber), transparent);
+    margin: 10px 0;
+}
+
+.divider.mcintosh {
+    background: linear-gradient(to right, transparent, var(--mcintosh-blue), transparent);
+}
+
+/* ===========================
+   Typographie
+   =========================== */
 .text-block {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    margin-top: 30px; /* Espace par rapport aux logos */
+    margin-top: 30px;
     font-size: 15px;
     letter-spacing: 3px;
     width: 100%;
 }
 
 .font-mini {
-            font-family: 'Bruno Ace', sans-serif;
-            text-transform: uppercase;
-            font-size: var(--font-size-line);
-        }
+    font-family: 'Bruno Ace', sans-serif;
+    text-transform: uppercase;
+    font-size: var(--font-size-line);
+}
 
-        .font-hifi {
-            font-family: 'Lexend Mega', sans-serif;
-            font-weight: 300;
-            font-size: 80px;
-            text-transform: uppercase;
-            font-size: var(--font-size-line);
-        }
+.font-hifi {
+    font-family: 'Lexend Mega', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: var(--font-size-line);
+}
 
-        .font-master {
-            font-family: 'Pinyon Script', cursive;
-            font-size: 80px;
-            letter-spacing: 0px;
-            text-transform: none;
-        }
+.font-master {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 40px;
+    letter-spacing: 0px;
+    text-transform: none;
+}
 
-        .font-touchscreen {
-            font-family: 'Doto', sans-serif;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 40px;
-        }
+.font-touchscreen {
+    font-family: 'Doto', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
 
-        /* Classe Roboto */
-        .font-windows {
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: #ffffff;
-        }
+.font-windows {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* ===========================
+   Responsive Design
+   =========================== */
+
+/* Tablettes et écrans moyens */
+@media (min-width: 768px) {
+    .col-md-6 {
+        width: 50%;
+    }
+    
+    .container-fluid {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+/* Ajustements pour écrans moyens-larges */
+@media (max-width: 991px) {
+    :root {
+        --font-size-base: 28px;
+        --logo-width: 350px;
+    }
+}
+
+/* Ajustements pour tablettes */
+@media (max-width: 767px) {
+    :root {
+        --font-size-base: 24px;
+        --logo-width: 300px;
+    }
+    
+    .logo-top {
+        margin-bottom: 25px;
+        border-width: 4px;
+    }
+    
+    .col-12:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Ajustements pour mobiles */
+@media (max-width: 576px) {
+    :root {
+        --font-size-base: 20px;
+        --logo-width: 250px;
+    }
+    
+    .logo-top {
+        margin-bottom: 20px;
+        border-width: 3px;
+    }
+    
+    .text-block {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+}
