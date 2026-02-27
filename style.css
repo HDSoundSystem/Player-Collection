@@ -6,3 +6,41 @@
     letter-spacing: 3px;
     width: 100%;
 }
+
+.font-mini {
+            font-family: 'Bruno Ace', sans-serif;
+            text-transform: uppercase;
+            font-size: var(--font-size-line);
+        }
+
+        .font-hifi {
+            font-family: 'Lexend Mega', sans-serif;
+            font-weight: 300;
+            font-size: 80px;
+            text-transform: uppercase;
+            font-size: var(--font-size-line);
+        }
+
+        .font-master {
+            font-family: 'Pinyon Script', cursive;
+            font-size: 80px;
+            letter-spacing: 0px;
+            text-transform: none;
+        }
+
+        .font-touchscreen {
+            font-family: 'Doto', sans-serif;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 40px;
+        }
+
+        /* Classe Roboto */
+        .font-windows {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #ffffff;
+        }
