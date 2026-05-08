@@ -3,6 +3,7 @@
   "short_name": "Audio Players Collection",
   "description": "Select your Audio Player",
   "start_url": "https://hdsoundsystem.github.io/Player-Collection/",
+  "scope": "/Player-Collection/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
